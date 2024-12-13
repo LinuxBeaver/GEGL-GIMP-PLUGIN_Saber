@@ -140,8 +140,8 @@ static void attach (GeglOperation *operation)
  state->cubism = gegl_node_new_child (gegl, "operation", "gegl:cubism", NULL);
  state->spread = gegl_node_new_child (gegl, "operation", "gegl:noise-spread", NULL);
  state->replace = gegl_node_new_child (gegl, "operation", "gegl:src",   NULL);
- state->normal = gegl_node_new_child (gegl, "operation", "gegl:over",    NULL);
- state->oilify = gegl_node_new_child (gegl, "operation", "gegl:oilify", "mask-radius", 3,    NULL);
+ state->normal = gegl_node_new_child (gegl, "operation", "gegl:dst-over",    NULL);
+ state->oilify = gegl_node_new_child (gegl, "operation", "gegl:oilify", "mask-radius", 4,    NULL);
 /*meta redirect property to new child orders go here
 
  gegl_operation_meta_redirect (operation, "propertyname", state->newchildname,  "originalpropertyname");
