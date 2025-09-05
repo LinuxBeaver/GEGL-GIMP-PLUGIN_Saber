@@ -88,7 +88,7 @@ property_double (hue, _("Color rotation"), 0.0)
   ui_meta       ("unit", "pixel-distance")
   description (_("Hue rotation"))
 
-property_boolean (offcanvasclip, _("Off canva clipping"), TRUE)
+property_boolean (offcanvasclip, _("Off canvas clipping"), TRUE)
   description    (_("A trade off between two technical settings that actually modifies Saber. Default TRUE is best for text styles to prevent the glowing border outlines from clipping, but the consequence is canvas bordering content will always clip with a glowing line.  When disabled FALSE Saber doesn't clip at the end of the canvas so opaque pixels touching the canvas canvas don't have a glowing line, but text styles will clip if the outline borders are large, thus making the text style bad. In example, when TRUE said glowing line clip will present itself on a transparent covered image of a human that cuts off at the ankles, because the ankles are the canvas edge. Said image of person's ankles will clip if TRUE, and not clip of FALSE. This exist because there is no perfect GEGL graph only trade offs. Put simply, consider making FALSE for human legs or any content touching the canvas, for text styles on canvas keep TRUE"))
 
 #else
